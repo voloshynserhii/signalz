@@ -22,3 +22,9 @@ nav {
 .right-button-wrapper button {
     margin: auto;
 }
+
+@media (max-width: 768px) {
+.right-button-wrapper{
+    display: none;
+}
+}

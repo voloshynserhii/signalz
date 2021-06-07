@@ -17,6 +17,7 @@ const ShareSection = () => {
   return (
     <div className="share">
       <h2>{window.innerWidth > 769 ? 'Share With' : 'Trusted by our beloved clients'}</h2>
+      <div className="share-wrapper">
       <div className="share-images">
         <a href="https://telegram.org">
           <img src={window.innerWidth > 769 ? Telegram : AirBnb} alt="telegram" />
@@ -36,6 +37,7 @@ const ShareSection = () => {
         <a href="https://telegram.org">
           <img src={window.innerWidth > 769 ? Facebook : Microsoft} alt="facebook" />
         </a>
+      </div>
       </div>
     </div>
   );
