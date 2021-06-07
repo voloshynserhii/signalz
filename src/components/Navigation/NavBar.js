@@ -14,7 +14,7 @@ const NavBar = () => {
       <Logo path="/" />
       <div className="nav-right">
         <NavMenu />
-        <div className="desktop-visible">
+        <div className="right-button-wrapper">
           <ColoredButton path="/">Access Demo</ColoredButton>
         </div>
       </div>

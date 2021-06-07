@@ -4,10 +4,14 @@ ul {
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    padding: 0 50px 0 0;
+    padding: 0 20px 0 20px;
+    height:100%;
+    margin: 0px;
+
 }
 .nav-hamburger img {
     display:none;
+    margin:0px;
 }
 li {
     font-weight: 600;
@@ -15,7 +19,8 @@ li {
     line-height: 20px;
     letter-spacing: 0.02em;
     color: #1E1137;
-    margin: 0 16px;
+    margin: 0 10px;
+    width: max-content;
 }
 .nav-link {
     text-decoration: none;
@@ -30,7 +35,7 @@ li {
     height: fit-content;
     margin-right: 14px;
 }
-@media (max-width: 450px) {
+@media (max-width: 768px) {
     .nav-img {
         width: 34px;
         height: 34px;
