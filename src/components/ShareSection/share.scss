@@ -4,8 +4,27 @@
   background: rgba(255, 255, 255, 0.04);
 }
 .share-images {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
   align-items: center;
   margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .share {
+    padding: 55px 25px;
+  }
+  .share h2 {
+    width: 90%;
+    margin: auto;
+  }
+  .share-images {
+    margin-top: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+  .share-images img {
+    width: 100%;
+  }
 }

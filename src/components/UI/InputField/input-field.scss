@@ -10,3 +10,9 @@
   line-height: 20px;
   color: rgba(28, 45, 87, 0.5);
 }
+@media (max-width: 768px) {
+  .input-field {
+    width: 100%;
+    font-size: 16px;
+  }
+}

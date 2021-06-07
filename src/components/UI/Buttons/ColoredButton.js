@@ -5,7 +5,7 @@ import "./buttons.scss";
 
 const ColoredButton = (props) => {
   return (
-    <button>
+    <button className="nav-coloredButton">
       <NavLink className="btn-text" to={props.path} exact>
         {props.children}
       </NavLink>

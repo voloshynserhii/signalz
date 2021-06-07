@@ -7,3 +7,19 @@ nav {
 .nav-right {
     display: flex;
 }
+.nav-hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid rgba(28, 45, 87, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    nav {
+        padding: 25px;
+    }
+}

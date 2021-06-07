@@ -27,3 +27,9 @@ li {
     height: fit-content;
     margin-right: 14px;
 }
+@media (max-width: 768px) {
+    .nav-img {
+        width: 34px;
+        height: 34px;
+    }
+}
