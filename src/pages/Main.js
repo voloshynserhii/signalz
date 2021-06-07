@@ -1,20 +1,11 @@
 import './main.scss';
 
-function Main() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          my App
-        </a>
-      </header>
-    </div>
-  );
-}
+const MainPage = () => {
+    return (
+        <>
+        <a href="/">Signalz</a>
+        </>
+    );
+};
 
-export default Main;
+export default MainPage;
