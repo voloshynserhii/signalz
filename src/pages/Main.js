@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
+import HeroSection from "../components/HeroSection";
+import ShareSection from "../components/ShareSection";
 
-import './main.scss';
+import "./main.scss";
 
 const MainPage = () => {
-    return (
-        <section>
-
-        </section>
-    );
+  return (
+    <main>
+      <HeroSection />
+      <ShareSection />
+    </main>
+  );
 };
 
 export default MainPage;

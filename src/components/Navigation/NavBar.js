@@ -1,12 +1,12 @@
 import NavMenu from "./components/NavMenu";
-import ColoredButton from "../Buttons/ColoredButton";
-import Logo from './components/Logo';
+import ColoredButton from "../UI/Buttons/ColoredButton";
+import Logo from "./components/Logo";
 import "./nav-bar.scss";
 
 const NavBar = () => {
   return (
     <nav>
-      <Logo path="/"/>
+      <Logo path="/" />
       <div className="nav-right">
         <NavMenu />
         <ColoredButton path="/">Access Demo</ColoredButton>

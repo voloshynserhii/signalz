@@ -6,7 +6,7 @@ import "./nav-items.scss";
 const Logo = (props) => {
   return (
     <NavLink className="nav-logo" to={props.path} exact>
-      <img src="assets/images/nav-logo.png" alt="logo" />
+      <img className="nav-img" src="assets/images/nav-logo.png" alt="logo" />
       <h3>Signalz</h3>
     </NavLink>
   );
