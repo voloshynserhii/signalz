@@ -1,3 +1,5 @@
+$color-primary: rgba(28, 45, 87, 1);
+$color-accent: rgba(28, 45, 87, 0.5);
 a {
-    color: green;
+    color: $color-primary;
 }

@@ -1,10 +1,12 @@
+import React from 'react';
+
 import './main.scss';
 
 const MainPage = () => {
     return (
-        <>
-        <a href="/">Signalz</a>
-        </>
+        <section>
+
+        </section>
     );
 };
 

@@ -1,0 +1,30 @@
+
+ul {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 50px 0 0;
+}
+li {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #1E1137;
+    margin: 0 16px;
+}
+.nav-link {
+    text-decoration: none;
+}
+.nav-logo {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    text-decoration: none;
+}
+img {
+    height: fit-content;
+    margin-right: 14px;
+}
