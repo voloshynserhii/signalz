@@ -45,8 +45,14 @@ p {
 .container {
   padding: 0 10%;
 }
+.desktop-visible {
+  display:block;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
+  .desktop-visible {
+    display:none;
+  }
   h1 { 
     font-size: 30px;
     line-height: 40px;

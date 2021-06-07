@@ -7,10 +7,14 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr;
+  column-gap: 50px;
   align-items: center;
   margin-top: 100px;
 }
-@media (max-width: 768px) {
+.share-images img {
+  width: 100%;
+}
+@media (max-width: 450px) {
   .share {
     padding: 55px 25px;
   }
@@ -23,8 +27,5 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 30px;
     column-gap: 30px;
-  }
-  .share-images img {
-    width: 100%;
   }
 }

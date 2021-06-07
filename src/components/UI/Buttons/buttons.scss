@@ -3,6 +3,7 @@
     border-radius: 12px;
     padding: 19px 22px;
     border: none;
+    width: max-content;
 }
 .btn-text {
     font-weight: bold;
@@ -10,4 +11,9 @@
     line-height: 16px;
     color: #FFFFFF;
     text-decoration: none;
+}
+@media (max-width: 450px) {
+    .nav-coloredButton {
+        width: 100%;
+    }
 }
