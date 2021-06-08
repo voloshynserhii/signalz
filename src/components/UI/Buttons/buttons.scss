@@ -1,19 +1,56 @@
 .nav-coloredButton {
-    background: linear-gradient(271.22deg, #446EFF -12.45%, #8B40FF 37.46%, #FF6669 105.3%);
-    border-radius: 12px;
-    padding: 19px 22px;
-    border: none;
-    width: max-content;
+  background: linear-gradient(
+    271.22deg,
+    #446eff -12.45%,
+    #8b40ff 37.46%,
+    #ff6669 105.3%
+  );
+  border-radius: 12px;
+  padding: 19px 22px;
+  border: none;
+  width: max-content;
 }
 .btn-text {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.switch-button {
+  background: linear-gradient(
+    271.22deg,
+    #446eff -12.45%,
+    #8b40ff 37.46%,
+    #ff6669 105.3%
+  );
+  -webkit-text-fill-color: transparent;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 2px;
+}
+.switch-button span {
+  background: -webkit-linear-gradient(
+    (220.22deg, #446eff -12.45%, #8b40ff 37.46%, #ff6669 105.3%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.inner-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  width: fit-content;
+  padding: 7px 40px;
+  text-transform: capitalize;
+  border-radius: 12px;
+  background: #ffffff;
 }
 @media (max-width: 768px) {
-    .nav-coloredButton {
-        width: 100%;
-    }
+  .nav-coloredButton {
+    width: 100%;
+  }
 }

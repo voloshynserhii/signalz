@@ -1,0 +1,55 @@
+.benefits {
+  width: auto;
+  height: auto;
+  background: url("../../assets/backgrounds/create-bg.svg") bottom no-repeat;
+  background-size: cover;
+  padding: 120px 12% 500px 12%;
+  text-align: center;
+}
+.switch-group {
+  margin: auto;
+  width: fit-content;
+  background: linear-gradient(
+    291.1deg,
+    rgba(68, 110, 255, 0.1) -0.6%,
+    rgba(139, 64, 255, 0.1) 40.74%,
+    rgba(255, 102, 105, 0.1) 96.93%
+  );
+  border-radius: 16px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.switch-passive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 21px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(28, 45, 87, 0.5);
+}
+.benefits-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+}
+.benefit {
+  background: linear-gradient(
+    291.1deg,
+    rgba(68, 110, 255, 0.1) -0.6%,
+    rgba(139, 64, 255, 0.1) 40.74%,
+    rgba(255, 102, 105, 0.1) 96.93%
+  );
+  border-radius: 24px;
+  padding: 54px 47px;
+  margin: 0 20px;
+}
+.benefit p {
+  color: rgba(28, 45, 87, 0.8);
+}
+.benefit img {
+  margin-bottom: -80px;
+}

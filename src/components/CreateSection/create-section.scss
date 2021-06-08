@@ -1,12 +1,12 @@
 .create {
   width: auto;
   height: auto;
-  background: linear-gradient(
-    271.5deg,
-    rgba(68, 110, 255, 0.04) -12.17%,
-    rgba(139, 64, 255, 0.04) 37.51%,
-    rgba(255, 102, 105, 0.04) 105.02%
-  );
+  // background: linear-gradient(
+  //   271.5deg,
+  //   rgba(68, 110, 255, 0.04) -12.17%,
+  //   rgba(139, 64, 255, 0.04) 37.51%,
+  //   rgba(255, 102, 105, 0.04) 105.02%
+  // );
   padding: 100px 12% 350px 12%;
   text-align: center;
 }
@@ -38,7 +38,9 @@
     overflow: hidden;
   }
   .create-bg {
-    background-size: contain;
+    background: url("../../assets/backgrounds/create-bg-mobile.svg") bottom no-repeat;
+    background-size: cover;
+    padding-bottom: 150px;
   }
   .items {
     flex-direction: column;
