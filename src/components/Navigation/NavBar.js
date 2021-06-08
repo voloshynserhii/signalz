@@ -14,7 +14,7 @@ const NavBar = () => {
       <Logo path="/" />
       <div className="nav-right">
         <NavMenu onClick={() => alert('menu will be here')}/>
-        <div className="desktop-visible">
+        <div className="right-button-wrapper">
           <ColoredButton path="/">Access Demo</ColoredButton>
         </div>
       </div>
