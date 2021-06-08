@@ -1,14 +1,30 @@
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 25px 12%;
+    padding: 15px 8%;
 }
 .nav-right {
     display: flex;
 }
-@media (max-width: 450px) {
+@media (max-width: 768px) {
     nav {
         padding: 25px;
     }
+}
+
+.right-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.right-button-wrapper button {
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+.right-button-wrapper{
+    display: none;
+}
 }
