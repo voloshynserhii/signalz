@@ -48,7 +48,10 @@ p {
 .desktop-visible {
   display:block;
 }
-
+ul {
+  list-style: none;
+  padding: 0;
+}
 @media (max-width: 450px) {
   .desktop-visible {
     display:none;

@@ -1,61 +1,61 @@
-ul {
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0 20px 0 20px;
-    height:100%;
-    margin: 0px;
-
+.menu-desktop {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  height: 100%;
+  margin: 0px;
 }
 .nav-hamburger img {
-    display:none;
-    margin:0px;
+  display: none;
+  margin: 0px;
 }
 li {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: #1E1137;
-    margin: 0 10px;
-    width: max-content;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #1e1137;
+  margin: 0 10px;
+  width: max-content;
+}
+li > a {
+  color: #1e1137;
 }
 .nav-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 .nav-logo {
-    display: flex;
-    width: fit-content;
-    align-items: center;
-    text-decoration: none;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  text-decoration: none;
 }
 .nav-img {
-    height: fit-content;
-    margin-right: 14px;
+  height: fit-content;
+  margin-right: 14px;
 }
 @media (max-width: 768px) {
-    .nav-img {
-        width: 34px;
-        height: 34px;
-    }
-    ul {
-        display: none;
-    }
-    .nav-hamburger img {
-        display:block;
-    }
-    .nav-hamburger {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        background: #FFFFFF;
-        border: 1px solid rgba(28, 45, 87, 0.1);
-        box-sizing: border-box;
-        border-radius: 10px;
-    }
-    
+  .nav-img {
+    width: 34px;
+    height: 34px;
+  }
+  .menu-desktop {
+    display: none;
+  }
+  .nav-hamburger img {
+    display: block;
+  }
+  .nav-hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid rgba(28, 45, 87, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
 }

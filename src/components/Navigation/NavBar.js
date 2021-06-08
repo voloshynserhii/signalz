@@ -1,19 +1,25 @@
-import { useEffect } from "react";
+import { useState } from "react";
 import NavMenu from "./components/NavMenu";
 import ColoredButton from "../UI/Buttons/ColoredButton";
 import Logo from "./components/Logo";
+import MobileMenu from "../MobileMenu";
 import "./nav-bar.scss";
 
 const NavBar = () => {
-  useEffect(() => {
-    console.log(window.innerWidth);
-  }, []);
+  const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
+
+  const onHamburgerHandler = () => {
+    setMobileMenuVisible((prev) => !prev);
+    return;
+  };
+  if (mobileMenuVisible && window.innerWidth < 769)
+    return <MobileMenu onClose={onHamburgerHandler} />;
 
   return (
-    <nav>
+    <nav className="flex-header">
       <Logo path="/" />
       <div className="nav-right">
-        <NavMenu onClick={() => alert('menu will be here')}/>
+        <NavMenu onClick={onHamburgerHandler} />
         <div className="right-button-wrapper">
           <ColoredButton path="/">Access Demo</ColoredButton>
         </div>
