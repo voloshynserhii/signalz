@@ -13,7 +13,7 @@ const NavBar = () => {
     <nav>
       <Logo path="/" />
       <div className="nav-right">
-        <NavMenu />
+        <NavMenu onClick={() => alert('menu will be here')}/>
         <div className="desktop-visible">
           <ColoredButton path="/">Access Demo</ColoredButton>
         </div>
