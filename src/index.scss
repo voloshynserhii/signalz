@@ -52,6 +52,27 @@ ul {
   list-style: none;
   padding: 0;
 }
+.colored-text {
+  width: fit-content;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.06em;
+  background: -webkit-linear-gradient(
+    (220.22deg, #446eff -12.45%, #8b40ff 37.46%, #ff6669 105.3%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.web-big {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: $color-accent;
+}
+// .background-bottom {
+//   width: 100%;
+// }
 @media (max-width: 450px) {
   .desktop-visible {
     display:none;

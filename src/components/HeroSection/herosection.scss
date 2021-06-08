@@ -67,7 +67,9 @@
     width: 100%;
     text-align: center;
     justify-content:center;
+    overflow: hidden;
     img {
+      min-width: none;
       max-width: 350px;
     }
   }

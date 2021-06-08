@@ -1,0 +1,56 @@
+.create {
+  width: auto;
+  height: auto;
+  background: linear-gradient(
+    271.5deg,
+    rgba(68, 110, 255, 0.04) -12.17%,
+    rgba(139, 64, 255, 0.04) 37.51%,
+    rgba(255, 102, 105, 0.04) 105.02%
+  );
+  padding: 100px 12% 350px 12%;
+  text-align: center;
+}
+.create-bg {
+  background: url("../../assets/backgrounds/create-bg.svg") bottom no-repeat;
+  background-size: cover;
+}
+.create-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+}
+.items img {
+  width: 50%;
+}
+.create-text {
+  width: 50%;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .create {
+    padding: 55px 25px 230px 25px;
+    overflow: hidden;
+  }
+  .create-bg {
+    background-size: contain;
+  }
+  .items {
+    flex-direction: column;
+    padding: 0;
+  }
+  .reversed {
+    flex-direction: column-reverse;
+  }
+  .items img {
+    width: 135%;
+  }
+  .create-text {
+    width: 100%;
+  }
+}
