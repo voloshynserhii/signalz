@@ -2,7 +2,7 @@ import React from "react";
 import HeroSection from "../components/HeroSection";
 import ShareSection from "../components/ShareSection";
 import CreateSection from "../components/CreateSection";
-// import SliderSection from "../components/SliderSection";
+import SliderSection from "../components/SliderSection";
 import BenefitsSection from "../components/BenefitsSection";
 import ReviewsSection from "../components/ReviewsSection";
 
@@ -14,7 +14,7 @@ const MainPage = () => {
       <HeroSection />
       <ShareSection />
       <CreateSection />
-      {/* <SliderSection /> */}
+      <SliderSection />
       <BenefitsSection />
       <ReviewsSection />
     </main>

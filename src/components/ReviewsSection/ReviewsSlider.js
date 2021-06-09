@@ -67,8 +67,8 @@ const ReviewsSlider = () => {
           />
         </Slide>
       </Slider>
-      <ButtonBack>Back</ButtonBack>
-      <ButtonNext>Next</ButtonNext>
+      <ButtonBack/>
+      <ButtonNext />
     </CarouselProvider>
   );
 };
