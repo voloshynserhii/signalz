@@ -12,14 +12,9 @@
 .slider-wrapper {
   position: relative;
 }
-
 .slider-item {
   padding: 100px 0;
   text-align: center;
-}
-.slider-image {
-  float: right;
-  padding-right: 10%;
 }
 .dot-group {
   position: absolute;
@@ -51,6 +46,12 @@
   text-align: start;
   margin-left: 35px;
 }
+.slider .carousel {
+  width: 360px;
+  margin-left: 60%;
+  background: url("../../assets/backgrounds/phone.png") center no-repeat;
+  overflow: hidden;
+}
 .slider .carousel__dot--selected {
   h5 {
     color: #1c2d57;
@@ -74,4 +75,87 @@
   line-height: 32px;
   color: rgba(28, 45, 87, 0.5);
   border-radius: 14px;
+}
+@media (max-width: 1000px) {
+  .slider .carousel {
+    margin-left: 57%;
+  }
+}
+@media (max-width: 900px) {
+  .slider .carousel {
+    margin-left: 52%;
+  }
+  .slider button {
+    width: 320px;
+  }
+}
+@media (max-width: 769px) {
+  .slider .carousel {
+    margin: 0 2%;
+    width: auto;
+  }
+  .dot-group {
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0%);
+    flex-direction: row;
+    background: linear-gradient(
+      271.22deg,
+      rgba(68, 110, 255, 0.1) -12.45%,
+      rgba(139, 64, 255, 0.1) 37.46%,
+      rgba(255, 102, 105, 0.1) 105.3%
+    );
+    border-radius: 20px;
+    padding: 5px;
+  }
+  .slider button {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    margin: 0 4px;
+    background: linear-gradient(
+      271.22deg,
+      rgba(68, 110, 255, 0.2) -12.45%,
+      rgba(139, 64, 255, 0.2) 37.46%,
+      rgba(255, 102, 105, 0.2) 105.3%
+    );
+  }
+  .slider .carousel__dot--selected {
+    background: linear-gradient(
+      271.22deg,
+      #446eff -12.45%,
+      #8b40ff 37.46%,
+      #ff6669 105.3%
+    );
+  }
+  .mobile-hidden {
+    animation-name: slide-hidden;
+    animation-duration: 0.7s;
+    visibility: hidden;
+    transition: visibility 0.7s linear;
+  }
+  .mobile-heading {
+    position: absolute;
+    bottom: 3%;
+    width: 100vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #1c2d57;
+  }
+  .mobile-heading span {
+    margin: 0 3px;
+  }
+}
+@media (max-width: 400px) {
+  .slider .carousel {
+    width: 94vw;
+    margin: 0 3vw;
+    background-size: contain;
+  }
+  .slider-image img {
+    width: 88%;
+  }
 }

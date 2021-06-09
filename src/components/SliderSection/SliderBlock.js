@@ -11,9 +11,9 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import SliderImage1 from "../../assets/images/slider1.png";
 import SliderImage2 from "../../assets/images/slider2.png";
 import SliderImage3 from "../../assets/images/slider3.png";
-// import SliderImage4 from "../../assets/images/slider4.png";
 import SliderItem from "./components/SliderItem";
 import SliderDot from "./components/SliderDot";
+import MobileHeading from "./components/MobileHeading";
 import "./slider-section.scss";
 
 const SliderBlock = () => {
@@ -28,42 +28,49 @@ const SliderBlock = () => {
       infinite
     >
       <Slider>
-        <Slide index={0} classNameHidden="slide-hidden">
+        <Slide index={0} classNameHidden="mobile-hidden">
           <SliderItem
             title="Your followers can copy your portfolio in 3 steps"
             image={SliderImage1}
           />
+          {window.innerWidth < 769 ? (
+            <MobileHeading number={"1."} dotName="Access Signalz" />
+          ) : null}
         </Slide>
-        <Slide index={1} classNameHidden="slide-hidden">
+        <Slide index={1} classNameHidden="mobile-hidden">
           <SliderItem
             title="Share trades in 4 easy steps"
             image={SliderImage2}
           />
+          {window.innerWidth < 769 ? (
+            <MobileHeading number={"2."} dotName="Connect Wallet" />
+          ) : null}
         </Slide>
-        <Slide index={2} classNameHidden="slide-hidden">
+        <Slide index={2} classNameHidden="mobile-hidden">
           <SliderItem
             title="Share trades in 4 easy steps"
             image={SliderImage3}
           />
+          {window.innerWidth < 769 ? (
+            <MobileHeading number={"3."} dotName="Copy Portfolio" />
+          ) : null}
         </Slide>
-        {/* <Slide index={3} classNameHidden="slide-hidden">
-          <SliderItem
-            title="Share trades in 4 easy steps"
-            image={SliderImage4}
-          />
-        </Slide> */}
       </Slider>
-      <DotGroup className="dot-group">
-        <Dot slide={0}>
-          <SliderDot number={1} dotName="Access Signalz" />
-        </Dot>
-        <Dot slide={1}>
-          <SliderDot number={2} dotName="Connect Wallet" />
-        </Dot>
-        <Dot slide={2}>
-          <SliderDot number={3} dotName="Copy Portfolio" />
-        </Dot>
-      </DotGroup>
+      {window.innerWidth > 768 ? (
+        <DotGroup className="dot-group">
+          <Dot slide={0}>
+            <SliderDot number={1} dotName="Access Signalz" />
+          </Dot>
+          <Dot slide={1}>
+            <SliderDot number={2} dotName="Connect Wallet" />
+          </Dot>
+          <Dot slide={2}>
+            <SliderDot number={3} dotName="Copy Portfolio" />
+          </Dot>
+        </DotGroup>
+      ) : (
+        <DotGroup className="dot-group" />
+      )}
     </CarouselProvider>
   );
 };
