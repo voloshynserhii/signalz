@@ -13,23 +13,23 @@
 .review {
     position: relative;
     width: 95%;
-    height: 320px;
-    min-height: 320px;
+    height: auto;
+    // min-height: 320px;
     background: #FFFFFF;
     border: 1px solid rgba(28, 45, 87, 0.1);
     box-sizing: border-box;
     box-shadow: 0px 60px 100px rgba(28, 45, 87, 0.07);
     border-radius: 14px;
     padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .review h5 {
     margin: 0 0 15px 0;
 }
-.review-bottom {
-    position: absolute;
-    bottom: 35px;
-    left: 35px;
-    right: 35px;
+.review p {
+    margin-bottom: 35px;
 }
 .review-name {
     text-align: start;
@@ -38,7 +38,7 @@
 .buttonBack___1mlaL {
     position: absolute;
     bottom: -20%;
-    left: 42%;
+    left: 43%;
     border: 1px solid rgba(28, 45, 87, 0.1);
     box-sizing: border-box;
     border-radius: 10px;
@@ -49,7 +49,7 @@
 .buttonNext___2mOCa {
     position: absolute;
     bottom: -20%;
-    right: 45%;
+    right: 45.5%;
     border: 1px solid rgba(28, 45, 87, 0.1);
     box-sizing: border-box;
     border-radius: 10px;
@@ -70,31 +70,38 @@
 .horizontalSlider___281Ls {
    overflow: inherit; 
 }
-@media (max-width: 1180px) {
-    .review {
-        height: 380px;
+@media (max-width: 1150px) {
+    .buttonBack___1mlaL {
+        left: 41%;
     }
-}
-@media (max-width: 900px) {
-    .review {
-        height: 520px;
+    .buttonNext___2mOCa {
+        right: 43%;
+    }
+    .review-content {
+        max-height: 280px;
+        overflow: scroll;
     }
 }
 @media (max-width: 768px) {
     .reviews {
-        padding: 0 0 150px 35px;
+        padding: 0 0 150px 0px;
         background: url("../../assets/backgrounds/reviews-bg-mobile.svg") bottom no-repeat;
         background-size: cover;
+    }
+    .reviews-wrapper {
+        padding-left: 5%;
     }
     .reviews h2 {
         margin-bottom: 50px;
     }
-    .review {
-        height: auto;
-    }
     .buttonBack___1mlaL {
         bottom: -80px;
         left: 35%;
+    }
+    .review p { 
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
     }
     .buttonNext___2mOCa {
         bottom: -80px;
