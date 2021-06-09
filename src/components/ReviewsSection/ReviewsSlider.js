@@ -25,7 +25,7 @@ const ReviewsSlider = () => {
       isIntrinsicHeight
       infinite
     >
-      <Slider >
+      <Slider>
         <Slide index={0} classNameHidden="slide-hidden">
           <ReviewSlide
             title="Incredible experience"
