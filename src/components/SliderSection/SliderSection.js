@@ -1,5 +1,5 @@
 import React from "react";
-import { CarouselProvider, Slider, Slide, Dot } from "pure-react-carousel";
+import { CarouselProvider, Slider, Slide, Dot, DotGroup } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 import SliderImage1 from "../../assets/images/slider1.png";
@@ -12,8 +12,8 @@ import "./slider-section.scss";
 const SliderSection = () => {
   return (
     <CarouselProvider
-      naturalSlideWidth={100}
-      naturalSlideHeight={60}
+      naturalSlideWidth={400}
+      naturalSlideHeight={500}
       totalSlides={4}
     >
       <Dot slide={0}>
@@ -54,6 +54,7 @@ const SliderSection = () => {
           />
         </Slide>
       </Slider>
+      <DotGroup />
     </CarouselProvider>
   );
 };
