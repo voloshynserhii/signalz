@@ -20,6 +20,7 @@
 .join h3,
 .join p {
   color: #ffffff;
+  margin-top: 0;
 }
 .join-content {
   width: 40%;
@@ -49,4 +50,54 @@
 }
 .join-form .nav-coloredButton a {
   color: rgba(139, 64, 255, 1);
+}
+@media (max-width: 1200px) {
+  .join {
+    padding: 80px 12%;
+  }
+  .join-image {
+    right: 5%;
+  }
+  .join-content {
+    width: 50%;
+  }
+}
+@media (max-width: 1000px) {
+  .join {
+    padding: 70px 25px;
+  }
+  .join-image {
+    right: 25px;
+  }
+}
+@media (max-width: 850px) {
+  .join {
+    padding: 70px 25px;
+    text-align: center;
+  }
+  .join h3 {
+    margin-bottom: 10px;
+  }
+  .join-image {
+    position: static;
+    width: 100%;
+    height: 300px;
+    background: url("../../assets/images/phone-mobile.png") center no-repeat;
+    background-size: contain;
+  }
+  .join img {
+    display: none;
+  }
+  .join-content {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .join-form {
+    display: block;
+    margin-top: 40px;
+  }
+  .join-form .input-field {
+    width: 100%;
+    margin-bottom: 16px;
+  }
 }
