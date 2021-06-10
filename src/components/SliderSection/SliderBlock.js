@@ -27,7 +27,6 @@ const SliderBlock = () => {
       }
       setMobileView(false);
     });
-    console.log("change screen");
   }, [setMobileView]);
 
   return (

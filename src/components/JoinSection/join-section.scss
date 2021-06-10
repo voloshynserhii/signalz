@@ -1,0 +1,52 @@
+.join {
+  position: relative;
+  background: linear-gradient(
+    273.23deg,
+    #446eff -4.01%,
+    #8b40ff 48.15%,
+    #ff6669 119.02%
+  );
+  padding: 130px 12%;
+}
+.join-image {
+  position: absolute;
+  right: 12%;
+  top: 0;
+  bottom: 0;
+}
+.join-image img {
+  height: 100%;
+}
+.join h3,
+.join p {
+  color: #ffffff;
+}
+.join-content {
+  width: 40%;
+}
+.join-form {
+  display: flex;
+  margin-top: 50px;
+}
+.join-form > * {
+  margin-right: 8px;
+  a {
+    min-width: min-content;
+  }
+}
+.join-form .input-field {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(247, 249, 253, 0.3);
+  min-width: unset;
+  width: 65%;
+  color: #f7f9fd;
+}
+.join-form ::placeholder {
+  color: #f7f9fd;
+}
+.join-form .nav-coloredButton {
+  background: #f7f9fd;
+}
+.join-form .nav-coloredButton a {
+  color: rgba(139, 64, 255, 1);
+}

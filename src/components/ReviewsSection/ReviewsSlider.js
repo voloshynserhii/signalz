@@ -25,7 +25,6 @@ const ReviewsSlider = () => {
       }
       setMobileView(false);
     });
-    console.log("change screen");
   }, [setMobileView]);
 
   return (

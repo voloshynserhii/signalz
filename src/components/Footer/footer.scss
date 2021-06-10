@@ -1,0 +1,30 @@
+.footer {
+  padding: 0 12%;
+}
+.footer hr {
+  border: 2px solid rgba(28, 45, 87, 0.1);
+}
+.footer-bottom,
+.footer-bottom-right .nav-link {
+  padding: 32px 0;
+  color: rgba(28, 45, 87, 0.5);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+.footer-bottom-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-bottom-right .nav-link {
+  margin: 0 16px;
+}
+.footer-bottom .icons {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+}

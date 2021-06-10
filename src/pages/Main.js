@@ -5,8 +5,10 @@ import CreateSection from "../components/CreateSection";
 import SliderSection from "../components/SliderSection";
 import BenefitsSection from "../components/BenefitsSection";
 import ReviewsSection from "../components/ReviewsSection";
-
-import "./main.scss";
+import QuestionsSection from "../components/QuestionsSection";
+import MapSection from "../components/MapSection";
+import JoinSection from "../components/JoinSection";
+import Footer from "../components/Footer";
 
 const MainPage = () => {
   return (
@@ -17,6 +19,10 @@ const MainPage = () => {
       <SliderSection />
       <BenefitsSection />
       <ReviewsSection />
+      <QuestionsSection />
+      <MapSection />
+      <JoinSection />
+      <Footer />
     </main>
   );
 };

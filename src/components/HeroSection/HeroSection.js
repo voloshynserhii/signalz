@@ -16,7 +16,7 @@ const HeroSection = () => {
         </p>
         <div className="input-group">
           <InputField type="text" placeholder="Enter your email" />
-          <ColoredButton path="/">{window.innerWidth > 768 ? "Sign Up" : "Get The App"}</ColoredButton>
+          <ColoredButton path="/">Sign Up</ColoredButton>
         </div>
       </div>
       <div className="hero-right">
