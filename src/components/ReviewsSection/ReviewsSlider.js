@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import {
   ButtonBack,
   ButtonNext,
@@ -15,11 +15,24 @@ import StarImage from "../../assets/images/star.svg";
 import "./reviews-section.scss";
 
 const ReviewsSlider = () => {
+  const [mobileView, setMobileView] = useState(false);
+  
+  useEffect(() => {
+      window.addEventListener('resize', () => {
+        if(window.innerWidth < 900) {
+          setMobileView(true);
+          return;
+        } 
+        setMobileView(false);
+      });
+      console.log('change screen')
+  }, [setMobileView])
+  
   return (
     <CarouselProvider
       naturalSlideWidth={400}
       naturalSlideHeight={400}
-      visibleSlides={window.innerWidth < 769 ? 1 : 2}
+      visibleSlides={mobileView ? 1 : 2}
       totalSlides={4}
       step={1}
       isIntrinsicHeight

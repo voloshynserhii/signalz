@@ -76,14 +76,28 @@
 }
 @media (max-width: 1150px) {
   .buttonBack___1mlaL {
-    left: 41%;
+    left: 40%;
   }
   .buttonNext___2mOCa {
-    right: 43%;
+    right: 42%;
   }
   .review-content {
     max-height: 280px;
     overflow: scroll;
+  }
+  .review {
+    height: 420px;
+  }
+}
+@media (max-width: 900px) {
+  .review {
+    height: auto;
+  }
+  .buttonBack___1mlaL {
+    left: 38%;
+  }
+  .buttonNext___2mOCa {
+    right: 40%;
   }
 }
 @media (max-width: 768px) {

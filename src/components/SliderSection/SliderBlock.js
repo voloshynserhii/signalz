@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   CarouselProvider,
   Slider,
@@ -17,6 +17,19 @@ import MobileHeading from "./components/MobileHeading";
 import "./slider-section.scss";
 
 const SliderBlock = () => {
+  const [mobileView, setMobileView] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 769) {
+        setMobileView(true);
+        return;
+      }
+      setMobileView(false);
+    });
+    console.log("change screen");
+  }, [setMobileView]);
+
   return (
     <CarouselProvider
       naturalSlideWidth={400}
@@ -33,7 +46,7 @@ const SliderBlock = () => {
             title="Your followers can copy your portfolio in 3 steps"
             image={SliderImage1}
           />
-          {window.innerWidth < 769 ? (
+          {mobileView ? (
             <MobileHeading number={"1."} dotName="Access Signalz" />
           ) : null}
         </Slide>
@@ -42,7 +55,7 @@ const SliderBlock = () => {
             title="Share trades in 4 easy steps"
             image={SliderImage2}
           />
-          {window.innerWidth < 769 ? (
+          {mobileView ? (
             <MobileHeading number={"2."} dotName="Connect Wallet" />
           ) : null}
         </Slide>
@@ -51,12 +64,12 @@ const SliderBlock = () => {
             title="Share trades in 4 easy steps"
             image={SliderImage3}
           />
-          {window.innerWidth < 769 ? (
+          {mobileView ? (
             <MobileHeading number={"3."} dotName="Copy Portfolio" />
           ) : null}
         </Slide>
       </Slider>
-      {window.innerWidth > 768 ? (
+      {!mobileView ? (
         <DotGroup className="dot-group">
           <Dot slide={0}>
             <SliderDot number={1} dotName="Access Signalz" />
