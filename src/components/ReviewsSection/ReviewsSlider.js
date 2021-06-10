@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import {
   ButtonBack,
   ButtonNext,
@@ -16,18 +16,18 @@ import "./reviews-section.scss";
 
 const ReviewsSlider = () => {
   const [mobileView, setMobileView] = useState(false);
-  
+
   useEffect(() => {
-      window.addEventListener('resize', () => {
-        if(window.innerWidth < 900) {
-          setMobileView(true);
-          return;
-        } 
-        setMobileView(false);
-      });
-      console.log('change screen')
-  }, [setMobileView])
-  
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 900) {
+        setMobileView(true);
+        return;
+      }
+      setMobileView(false);
+    });
+    console.log("change screen");
+  }, [setMobileView]);
+
   return (
     <CarouselProvider
       naturalSlideWidth={400}
@@ -80,7 +80,7 @@ const ReviewsSlider = () => {
           />
         </Slide>
       </Slider>
-      <ButtonBack/>
+      <ButtonBack />
       <ButtonNext />
     </CarouselProvider>
   );

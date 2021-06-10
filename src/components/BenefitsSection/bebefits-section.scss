@@ -57,6 +57,9 @@
   margin-bottom: -80px;
 }
 @media (max-width: 1100px) {
+  .benefits {
+    padding-bottom: 300px;
+  }
   .benefit {
     height: 500px;
     overflow: hidden;
@@ -64,9 +67,10 @@
 }
 @media (max-width: 968px) {
   .benefits {
-    background: url("../../assets/backgrounds/create-bg-mobile.svg") bottom no-repeat;
+    background: url("../../assets/backgrounds/create-bg-mobile.svg") bottom
+      no-repeat;
     background-size: cover;
-    padding: 60px 25px 300px 25px;
+    padding: 60px 25px 400px 25px;
   }
   .benefits-flex {
     flex-direction: column;
@@ -76,5 +80,20 @@
     height: auto;
     padding: 30px;
     margin: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  .benefits {
+    padding-bottom: 300px;
+  }
+}
+@media (max-width: 568px) {
+  .benefits {
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 400px) {
+  .benefits {
+    padding-bottom: 100px;
   }
 }
