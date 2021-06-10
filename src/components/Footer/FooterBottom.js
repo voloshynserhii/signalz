@@ -10,7 +10,7 @@ const FooterBottom = () => {
     <div className="flex-between-center footer-bottom">
       <div>© 2021 Signalz. All rights reserved.</div>
       <div className="footer-bottom-right">
-        <div>
+        <div className="footer-links">
           <NavLink className="nav-link" to={"/"} exact>
             Privacy Policy
           </NavLink>
