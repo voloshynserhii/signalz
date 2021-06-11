@@ -115,7 +115,7 @@
   }
   .buttonBack___1mlaL {
     bottom: -80px;
-    left: 35%;
+    left: 42%;
   }
   .review p {
     font-weight: 500;
@@ -124,9 +124,29 @@
   }
   .buttonNext___2mOCa {
     bottom: -80px;
-    right: 38%;
+    right: 39%;
   }
   .bold-gray {
     margin-top: 10px;
+  }
+}
+@media (max-width:560px) {
+  .buttonBack___1mlaL {
+    bottom: -80px;
+    left: 38%;
+  }
+  .buttonNext___2mOCa {
+    bottom: -80px;
+    right: 36%;
+  }
+}
+@media (max-width:420px) {
+  .buttonBack___1mlaL {
+    bottom: -80px;
+    left: 34%;
+  }
+  .buttonNext___2mOCa {
+    bottom: -80px;
+    right: 32%;
   }
 }

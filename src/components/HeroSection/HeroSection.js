@@ -1,5 +1,6 @@
 import InputField from "../UI/InputField";
 import ColoredButton from "../UI/Buttons/ColoredButton";
+import HeroImage from '../../assets/images/hero.png';
 import "./herosection.scss";
 
 const HeroSection = () => {
@@ -20,7 +21,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="hero-right">
-        <img className="hero-img" src="/assets/images/hero.png" alt="hero" />
+        <img className="hero-img" src={HeroImage} alt="hero" />
       </div>
     </div>
   );

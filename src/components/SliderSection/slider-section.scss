@@ -15,6 +15,11 @@
 .slider-item {
   padding: 100px 0;
   text-align: center;
+  height: 100%;
+}
+.slider-image img {
+  width: 86%;
+  z-index: -1;
 }
 .dot-group {
   position: absolute;
@@ -148,6 +153,10 @@
   .mobile-heading span {
     margin: 0 3px;
   }
+  .slider-image img {
+    width: 308px;
+    
+  }
 }
 @media (max-width: 400px) {
   .slider .carousel {
@@ -156,6 +165,6 @@
     background-size: contain;
   }
   .slider-image img {
-    width: 88%;
+    width: 90%;
   }
 }
