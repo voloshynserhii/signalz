@@ -1,18 +1,41 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import DropDown from "./components/DropDown";
-import DownIcon from "../../assets/images/down.svg";
 
 import DROPDOWN_DATA from "./data";
 import "./questions-section.scss";
 
 const QuestionsSection = () => {
-  const [dropList, setDropList] = useState(DROPDOWN_DATA);
+  const [dropList, setDropList] = useState([]);
 
-  const onIdHandler = (id) => {
-    const activeIndex = dropList.findIndex(item => item.id === id);
-    const active = dropList.find((item, index) => index === activeIndex);
-    console.log(active);
-  }
+  let content = DROPDOWN_DATA;
+
+  const onIdHandler = useCallback(
+    (id) => {
+      let newContent = [];
+      content.forEach((item) => {
+        if (item.id !== id) {
+          let newItem = {
+            ...item,
+            active: false,
+          };
+          newContent.push(newItem);
+        } else {
+          let activeItem = {
+            ...item,
+            active: true,
+          };
+          newContent.push(activeItem);
+        }
+      });
+      setDropList(newContent);
+    },
+    [content]
+  );
+
+  useEffect(() => {
+    setDropList(content);
+  }, [content]);
+
   return (
     <div className="questions">
       <h2>Frequently asked questions</h2>
@@ -23,7 +46,6 @@ const QuestionsSection = () => {
               key={dropdown.id}
               id={dropdown.id}
               openState={dropdown.active}
-              arrow={DownIcon}
               title={dropdown.title}
               hiddenText={dropdown.hiddenText}
               onId={onIdHandler}
