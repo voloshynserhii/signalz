@@ -21,7 +21,7 @@ const NavBar = () => {
       <div className="nav-right">
         <NavMenu onClick={onHamburgerHandler} />
         <div className="right-button-wrapper">
-          <ColoredButton path="/">Access Demo</ColoredButton>
+          <ColoredButton path="/demo">Access Demo</ColoredButton>
         </div>
       </div>
     </nav>
