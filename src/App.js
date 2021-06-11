@@ -10,11 +10,19 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
+        
           <Route path={"/"} exact>
-            <NavBar/>
+          <NavBar/>
+
             <MainPage/>
           </Route>
-        <Route path={"/demo"} exact component={DemoPage} />
+        <Route  path={"/demo"} exact>
+          <div className="fullScreen">
+          <NavBar/>
+
+          <DemoPage className=""/>
+          </div>
+        </Route>
       </Switch>
     </BrowserRouter>
   );

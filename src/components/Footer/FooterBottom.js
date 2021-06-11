@@ -10,6 +10,7 @@ const FooterBottom = () => {
     <div className="flex-between-center footer-bottom">
       <div>© 2021 Signalz. All rights reserved.</div>
       <div className="footer-bottom-right">
+        {/*
         <div className="footer-links">
           <NavLink className="nav-link" to={"/"} exact>
             Privacy Policy
@@ -18,6 +19,7 @@ const FooterBottom = () => {
             Terms
           </NavLink>
         </div>
+        */}
         <div className="icons">
           <a href="https://telegram.org">
             <img src={TwitterIcon} alt="TwitterIcon" />
