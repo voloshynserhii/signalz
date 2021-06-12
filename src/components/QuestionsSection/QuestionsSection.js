@@ -37,7 +37,7 @@ const QuestionsSection = () => {
   }, [content]);
 
   return (
-    <div className="questions">
+    <div className="questions" id="faq">
       <h2>Frequently asked questions</h2>
       <div className="questions-block">
         {dropList.map((dropdown) => {

@@ -6,7 +6,7 @@ import "./create-section.scss";
 
 const CreateSection = () => {
   return (
-    <div className="create-bg">
+    <div className="create-bg" id="benefits">
       <div className="create">
         <h2>Create. Connect. Grow.</h2>
         <div className="create-block">

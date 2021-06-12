@@ -5,7 +5,7 @@ import Logo from "./components/Logo";
 import MobileMenu from "../MobileMenu";
 import "./nav-bar.scss";
 
-const NavBar = () => {
+const NavBar = (props) => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
   const onHamburgerHandler = () => {
@@ -16,7 +16,7 @@ const NavBar = () => {
     return <MobileMenu onClose={onHamburgerHandler} />;
 
   return (
-    <nav className="flex-header">
+    <nav className={`flex-header ${props.className}`}>
       <Logo path="/" />
       <div className="nav-right">
         <NavMenu onClick={onHamburgerHandler} />

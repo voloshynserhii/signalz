@@ -7,10 +7,10 @@ const NavMenu = (props) => {
     <div className="nav-hamburger" onClick={props.onClick}>
       <img src={MenuIcon} alt="hamburger" />
       <ul className="menu-desktop">
-        <MenuItem path="/features">Features</MenuItem>
-        <MenuItem path="/benefits">Benefits</MenuItem>
-        <MenuItem path="/faq">Faq</MenuItem>
-        <MenuItem path="/contact-us">Contact us</MenuItem>
+        <MenuItem path="/#benefits">Benefits</MenuItem>
+        <MenuItem path="/#features">Features</MenuItem>
+        <MenuItem path="/#faq">Faq</MenuItem>
+        <MenuItem path="/#join">Join</MenuItem>
       </ul>
     </div>
   );

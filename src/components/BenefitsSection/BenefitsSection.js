@@ -15,7 +15,7 @@ const BenefitsSection = () => {
   };
   if (active)
     return (
-      <div className="benefits">
+      <div className="benefits" id="benefits">
         <h2>Benefits of trading</h2>
         <SwitchGroup switchHandler={onSwitchHandler} />
         <div className="benefits-flex">

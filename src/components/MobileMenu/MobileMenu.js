@@ -21,7 +21,6 @@ const MobileMenu = (props) => {
           <MenuItem path="/faq">Faq</MenuItem>
           <MenuItem path="/contact-us">Contact us</MenuItem>
         </ul>
-      </div>
       <div className="mobile-menu-inputs">
         <InputField type="text" placeholder="Enter your email" />
         <ColoredButton path="/">
@@ -29,6 +28,8 @@ const MobileMenu = (props) => {
         </ColoredButton>
       </div>
     </div>
+    </div>
+
   );
 };
 

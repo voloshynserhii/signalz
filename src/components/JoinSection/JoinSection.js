@@ -5,7 +5,7 @@ import "./join-section.scss";
 
 const JoinSection = () => {
   return (
-    <div className="join">
+    <div className="join" id="join">
       <div className="join-image">
         <img src={PhoneImage} alt="PhoneImage" />
       </div>

@@ -4,7 +4,7 @@ import "./reviews-section.scss";
 
 const ReviewsSection = () => {
   return (
-    <div className="reviews">
+    <div className="reviews" id="reviews">
       <h2>What’s our client say about us</h2>
       <div className="reviews-wrapper">
         <ReviewsSlider />

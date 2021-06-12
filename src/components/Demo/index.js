@@ -3,6 +3,7 @@ import "./demo.scss"
 const Demo = () => {
   return (
       <div className="frameWrapper">
+        <div className="mask"/>
         <iframe
           id="iframe"
           scrolling="no" frameborder="0"

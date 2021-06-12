@@ -12,15 +12,18 @@ function App() {
       <Switch>
         
           <Route path={"/"} exact>
-          <NavBar/>
+          <NavBar />
 
             <MainPage/>
           </Route>
         <Route  path={"/demo"} exact>
           <div className="fullScreen">
-          <NavBar/>
+          
+          <NavBar  className="hidden-mobile"/>
 
-          <DemoPage className=""/>
+
+
+          <DemoPage />
           </div>
         </Route>
       </Switch>
