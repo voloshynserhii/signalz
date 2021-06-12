@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 12%;
+  padding: 0px 12%;
 }
 .nav-right {
   display: flex;
@@ -25,11 +25,16 @@
 }
 @media (max-width:800px) {
   .flex-header {
-    padding: 15px 10%;
+    padding: 0px 7%;
   }
 }
 @media (max-width: 768px) {
   .right-button-wrapper {
     display: none;
   }
+}
+
+.flex-header {
+  z-index:10;
+  background-color: white;
 }

@@ -7,6 +7,16 @@ $color-accent: rgba(28, 45, 87, 0.5);
 
 html { font-family: "Inter", "system-ui"; }
 
+
+.fullScreen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+
+  
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
