@@ -20,7 +20,7 @@ const DROPDOWN_DATA = [
     {
         id: 'a04',
         title: "Can I tap into Signals audience?",
-        hiddenText: "Yes, you can definitely access or members. Strong traders will be advertised at the top of our trading leaderboard.",
+        hiddenText: "Yes, you can access our members. Strong traders will be advertised at the top of our trading leaderboard.",
         active: false
     },
     {
