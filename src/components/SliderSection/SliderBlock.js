@@ -20,6 +20,9 @@ const SliderBlock = () => {
   const [mobileView, setMobileView] = useState(false);
 
   useEffect(() => {
+    if (window.innerWidth < 769) {
+      setMobileView(true);
+    }
     window.addEventListener("resize", () => {
       if (window.innerWidth < 769) {
         setMobileView(true);

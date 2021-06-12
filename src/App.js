@@ -10,20 +10,15 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        
-          <Route path={"/"} exact>
+        <Route path={"/"} exact>
           <NavBar />
-
-            <MainPage/>
-          </Route>
-        <Route  path={"/demo"} exact>
+          <MainPage />
+        </Route>
+        <Route path={"/demo"} exact>
           <div className="fullScreen">
-          
-          <NavBar  className="hidden-mobile"/>
+            <NavBar className="hidden-mobile" />
 
-
-
-          <DemoPage />
+            <DemoPage />
           </div>
         </Route>
       </Switch>

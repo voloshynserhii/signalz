@@ -18,6 +18,9 @@ const ReviewsSlider = () => {
   const [mobileView, setMobileView] = useState(false);
 
   useEffect(() => {
+    if (window.innerWidth < 900) {
+      setMobileView(true);
+    }
     window.addEventListener("resize", () => {
       if (window.innerWidth < 900) {
         setMobileView(true);
@@ -79,8 +82,10 @@ const ReviewsSlider = () => {
           />
         </Slide>
       </Slider>
-      <ButtonBack />
-      <ButtonNext />
+      <div>
+        <ButtonBack />
+        <ButtonNext />
+      </div>
     </CarouselProvider>
   );
 };
