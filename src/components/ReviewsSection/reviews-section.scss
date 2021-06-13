@@ -87,6 +87,7 @@
   }
   .review {
     height: 420px;
+    min-height: fit-content;
   }
 }
 @media (max-width: 900px) {
@@ -122,7 +123,7 @@
   }
   .review p {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
   }
   .buttonNext___2mOCa {
@@ -154,9 +155,6 @@
   .buttonNext___2mOCa {
     bottom: -80px;
     right: 32%;
-  }
-  .review {
-    min-height: 280px;
   }
   .review img {
     width: 60px;

@@ -29,6 +29,7 @@ const SliderBlock = () => {
         return;
       }
       setMobileView(false);
+      return (() => {});
     });
   }, [setMobileView]);
 

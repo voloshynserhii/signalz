@@ -28,6 +28,7 @@ const ReviewsSlider = () => {
       }
       setMobileView(false);
     });
+    return (() => {});
   }, [setMobileView]);
 
   return (
