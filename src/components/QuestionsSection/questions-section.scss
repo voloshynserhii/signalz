@@ -29,12 +29,12 @@
 .dropdown-toggle h5 {
   width: 87%;
   margin: 0;
-  
 }
 .dropdown-arrow {
   padding: 12px;
   box-sizing: border-box;
   border-radius: 10px;
+  cursor: pointer;
 }
 .dropdown-arrow-passive {
   border: 1px solid rgba(28, 45, 87, 0.1);
@@ -66,5 +66,8 @@
   .questions-block {
     margin-top: 40px;
     grid-template-columns: 100%;
+  }
+  .dropdown-content {
+    padding: 0 35px 35px 35px;
   }
 }

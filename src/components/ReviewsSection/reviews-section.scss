@@ -14,7 +14,7 @@
   position: relative;
   width: 95%;
   height: auto;
-  min-height: 320px;
+  min-height: 340px;
   background: #ffffff;
   border: 1px solid rgba(28, 45, 87, 0.1);
   box-sizing: border-box;
@@ -110,6 +110,9 @@
   .reviews-wrapper {
     padding-left: 5%;
   }
+  .review {
+    padding: 15px;
+  }
   .reviews h2 {
     margin-bottom: 50px;
   }
@@ -130,7 +133,7 @@
     margin-top: 10px;
   }
 }
-@media (max-width:560px) {
+@media (max-width: 560px) {
   .buttonBack___1mlaL {
     bottom: -80px;
     left: 38%;
@@ -139,8 +142,11 @@
     bottom: -80px;
     right: 36%;
   }
+  .review-name {
+    margin: 0 8px;
+  }
 }
-@media (max-width:420px) {
+@media (max-width: 420px) {
   .buttonBack___1mlaL {
     bottom: -80px;
     left: 34%;
@@ -148,5 +154,11 @@
   .buttonNext___2mOCa {
     bottom: -80px;
     right: 32%;
+  }
+  .review {
+    min-height: 280px;
+  }
+  .review img {
+    width: 60px;
   }
 }
